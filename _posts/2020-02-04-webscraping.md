@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Webscraping"
+title:  "Web Scraper"
 date:   2020-02-04 22:30:18 -0500
 categories: jekyll update
 ---
 
-I've written my first Python code with the help of Digital Ocean. 
+I've written my first Python code with the help of [Real Python](https://realpython.com/beautiful-soup-web-scraper-python/ "Web Scraper With Python"). 
 It's far from efficient but will attempt to imporve it in the futher.
 
-'''
+```python
 
 !/usr/bin/env python
 
@@ -59,4 +59,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-'''
+```
