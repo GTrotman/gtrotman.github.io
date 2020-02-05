@@ -28,7 +28,7 @@ twitter_username: garth_trotman
 github_username:  gtrotman
 
 # Build settings
-# theme: minima
+theme: minima
 # theme: jekyll-theme-architect
 plugins:
   - jekyll-feed
