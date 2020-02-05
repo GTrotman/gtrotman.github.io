@@ -29,7 +29,7 @@ github_username:  gtrotman
 
 # Build settings
 # theme: minima
-theme: Architect
+theme: jekyll-theme-architect
 plugins:
   - jekyll-feed
 
