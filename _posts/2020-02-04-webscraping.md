@@ -35,21 +35,16 @@ def main():
     #use re.findall to get all the links
     job_elems = table.find_all('div', class_="jobsearch-SerpJobCard unifiedRow row result")
 
-    #print (job_elems)
-
-    # get current
+    # get current time
     today = datetime.now().strftime('%d%b%Y')
-
+    # loop through job_elems and write the results to a file
+    
     with open(f'jobs_{today}.txt', 'w') as file:
         for job_elem in job_elems:
             title_elem = job_elem.find('a', title=True)
             location_elem = job_elem.find('div', class_="recJobLoc")
             link_elem = job_elem.find('a', href=True)
             company_elem = job_elem.find('span', class_='company')
-
-            #if None in (title_elem, company_elem, location_elem):
-            #  continue
-            
             
             file.write(title_elem.text.strip() + '\n')
             file.write(company_elem.text.strip()+ '\n')
